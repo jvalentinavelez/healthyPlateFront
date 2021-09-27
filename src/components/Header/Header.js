@@ -7,7 +7,7 @@ import { Form } from 'react-bootstrap';
 import { FormControl } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import profile from './../../user.svg';
-import logo from './../../fish.svg';
+import logo from '../../img/salad.svg';
 
 function Header(){
   return (
