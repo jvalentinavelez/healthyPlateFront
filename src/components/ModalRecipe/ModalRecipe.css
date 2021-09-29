@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 .Modal{
   font-family: "Lato";
@@ -68,10 +68,16 @@
 
 .preparacionDiv{
   text-align: justify;
+  /* background-color: #A4C3B2; */
+
 }
 
 .ingredientsTitle{
   margin: 10px 10px;
+}
+
+.boldTitles{
+  font-weight: 700 !important;
 }
 
 .ingredientsContent{

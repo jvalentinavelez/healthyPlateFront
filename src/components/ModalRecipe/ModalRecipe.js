@@ -27,7 +27,7 @@ function MydModalWithGrid(props) {
                 <Image className="recipeImg d-block img-fluid" src={bowl} rounded />
             </Col>
             <Col xs={12} md={12} lg={5}>
-              <Row> <div className="ingredientsTitle">Ingredientes</div>
+              <Row> <div className="ingredientsTitle"><span className="boldTitles">Ingredientes</span></div>
               </Row>
               <Row>
                 <Container>
@@ -59,7 +59,7 @@ function MydModalWithGrid(props) {
               </Row>
               <Row className="preparacionRow">
               <div className="preparacionDiv">
-              Preperación: Servir yogurt en un bowl y cubrir con banano, mora, fresa, granola, coco rayado y semillas de chía.
+              <span className="boldTitles">Preperación: </span> Servir yogurt en un bowl y cubrir con banano, mora, fresa, granola, coco rayado y semillas de chía.
               Aenean eleifend mattis nunc, in ultricies dolor egestas sit amet. Aliquam aliquet urna eget ante bibendum, quis facilisis elit tempus.
               Mauris facilisis lectus venenatis, hendrerit orci imperdiet, sodales dui. Nulla tristique lobortis diam, vitae ullamcorper magna dignissim vitae.
               Maecenas vulputate scelerisque dui sit amet facilisis. Vivamus gravida euismod tortor vitae varius. Nulla vitae massa quis magna iaculis bibendum gravida a nunc.
@@ -79,7 +79,7 @@ function MydModalWithGrid(props) {
                         <div className="text-center">401 kCal</div>
                       </Row>
                       <Row>
-                        <div className="text-center">Calorías</div>
+                        <div className="text-center boldTitles">Calorías</div>
                       </Row>
                     </Col>
                     <Col>
@@ -87,7 +87,7 @@ function MydModalWithGrid(props) {
                           <div className="text-center">24g</div>
                       </Row>
                       <Row>
-                          <div className="text-center">Proteínas</div>
+                          <div className="text-center boldTitles">Proteínas</div>
                       </Row>
                     </Col>
                     <Col>
@@ -95,7 +95,7 @@ function MydModalWithGrid(props) {
                         <div className="text-center">43g</div>
                     </Row>
                     <Row>
-                        <div className="text-center">Carbs</div>
+                        <div className="text-center boldTitles">Carbs</div>
                     </Row>
                     </Col>
                     <Col>
@@ -103,7 +103,7 @@ function MydModalWithGrid(props) {
                         <div className="text-center">18g</div>
                     </Row>
                     <Row>
-                        <div className="text-center">Grasas</div>
+                        <div className="text-center boldTitles">Grasas</div>
                     </Row>
                     </Col>
                 </Row>
@@ -112,10 +112,10 @@ function MydModalWithGrid(props) {
             <Col xs={12} md={5} className="categoria">
               <Container className="text-center">
                 <Row>
-                  <div className="text-center">Dificultad: Fácil</div>
+                  <div className="text-center"><span className="boldTitles">Dificultad: </span>Fácil</div>
                 </Row>
                 <Row>
-                  <div className="text-center">Tiempo: 10min</div>
+                  <div className="text-center"><span className="boldTitles">Tiempo: </span>10min</div>
                 </Row>
               </Container>
             </Col>
