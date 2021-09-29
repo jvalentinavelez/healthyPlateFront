@@ -19,8 +19,8 @@ function Header(){
     <Container>
         <Navbar className="main-nav" collapseOnSelect expand="lg">
           <Container>
-            <Navbar.Brand href="#home">
-            <img alt="" src={logo} width="50" height="50"className="d-inline-block"/>{' '}HealthyPlate
+            <Navbar.Brand className="NavbarTitle" href="/">
+            <img alt="" src={logo} width="50" height="50"className="d-inline-block"/><span className="NavbarTitle">  HealthyPlate</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
