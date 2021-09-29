@@ -15,6 +15,10 @@ function App() {
         <Layout path="/MiEspacio">
           <MiEspacio />
         </Layout>
+        <Layout path="/RecetasGuardadas">
+        </Layout>
+        <Layout path="/alimentacionDia">
+        </Layout>
       </Switch>
     </Router>
   )

@@ -9,7 +9,7 @@ function MiEspacio() {
     <Container>
       <Row>
         <Col>
-          <Card as="a" className="Card">
+          <Card as="a" className="Card" href="RecetasGuardadas">
             <Card.Body className="CardBody">
               <Card.Title className="CardTitle">
               <span>Recetas<br />guardadas</span></Card.Title>
@@ -25,7 +25,7 @@ function MiEspacio() {
           </Card>
         </Col>
         <Col>
-          <Card as="a" className="Card">
+          <Card as="a" className="Card" href="alimentacionDia">
             <Card.Body className="CardBody">
               <Card.Title className="CardTitle"><span>Alimentación <br /> del día</span></Card.Title>
               <Card.Text className="CardText">
