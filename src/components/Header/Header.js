@@ -41,7 +41,7 @@ function Header(){
               </Nav>
               <MydModalWithGrid show={showModal} onHide={handleClose} />
               <Nav className="me-auto">
-                <Nav.Link href="#miEspacio">Mi espacio</Nav.Link>
+                <Nav.Link href="MiEspacio">Mi espacio</Nav.Link>
               </Nav>
               <Nav>
                 <Nav.Link href="#home">

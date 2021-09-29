@@ -1,13 +1,22 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./components/Header/Header.js";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import Layout from "./Layout";
+import MiEspacio from "./components/MiEspacio/MiEspacio.js";
 
 function App() {
   return (
-      <Header></Header>
+    <Router>
+      <Switch>
+        <Layout exact path="/">
+        </Layout>
+        <Layout path="/MiEspacio">
+          <MiEspacio />
+        </Layout>
+      </Switch>
+    </Router>
   )
 }
 
