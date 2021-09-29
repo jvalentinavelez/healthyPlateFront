@@ -13,8 +13,8 @@ function MydModalWithGrid(props) {
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" className="Modal" size="lg"
       centered>
-      <Modal.Header className="ModalContent">
-        <Modal.Title id="contained-modal-title-vcenter text-center">
+      <Modal.Header>
+        <Modal.Title id="contained-modal-title-vcenter" className="Title">
           Bowl de Frutas y Granola
         </Modal.Title>
       <i className={ `bi bi-heart ${heartActive ? 'bi bi-heart-fill':"" }`} onClick={() => setHeartState(!heartActive)} id="heart"></i>
