@@ -44,7 +44,7 @@ function Header(){
                 <Nav.Link href="MiEspacio">Mi espacio</Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link href="#home">
+                <Nav.Link href="MiPerfil">
                 <img alt="" src={profile} width="35"height="35"/>
                 </Nav.Link>
               </Nav>

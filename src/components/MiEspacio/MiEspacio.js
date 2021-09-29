@@ -25,7 +25,7 @@ function MiEspacio() {
           </Card>
         </Col>
         <Col>
-          <Card as="a" className="Card" href="alimentacionDia">
+          <Card as="a" className="Card" href="AlimentacionDia">
             <Card.Body className="CardBody">
               <Card.Title className="CardTitle"><span>Alimentación <br /> del día</span></Card.Title>
               <Card.Text className="CardText">

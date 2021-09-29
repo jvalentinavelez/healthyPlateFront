@@ -17,7 +17,9 @@ function App() {
         </Layout>
         <Layout path="/RecetasGuardadas">
         </Layout>
-        <Layout path="/alimentacionDia">
+        <Layout path="/AlimentacionDia">
+        </Layout>
+        <Layout path="/MiPerfil">
         </Layout>
       </Switch>
     </Router>
