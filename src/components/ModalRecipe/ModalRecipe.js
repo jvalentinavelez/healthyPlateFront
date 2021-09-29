@@ -14,13 +14,13 @@ function MydModalWithGrid(props) {
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" className="Modal" size="lg"
       centered>
       <Modal.Header className="ModalContent">
-        <Modal.Title id="contained-modal-title-vcenter">
+        <Modal.Title id="contained-modal-title-vcenter text-center">
           Bowl de Frutas y Granola
         </Modal.Title>
       <i className={ `bi bi-heart ${heartActive ? 'bi bi-heart-fill':"" }`} onClick={() => setHeartState(!heartActive)} id="heart"></i>
 
       </Modal.Header>
-      <Modal.Body className="show-grid ModalContent">
+      <Modal.Body className="show-grid ModalBody">
         <Container>
           <Row>
             <Col xs={12} md={12} lg={7} className="m-auto">
@@ -122,8 +122,8 @@ function MydModalWithGrid(props) {
           </Row>
         </Container>
       </Modal.Body>
-      <Modal.Footer className="ModalContent">
-        <Button onClick={props.onHide} variant="secondary">Cerrar</Button>
+      <Modal.Footer className="ModalBody">
+        <Button onClick={props.onHide} className="btnClose">Cerrar</Button>
 
       </Modal.Footer>
     </Modal>

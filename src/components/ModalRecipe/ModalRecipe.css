@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;&display=swap');
 
 .Modal{
   font-family: "Lato";
@@ -6,8 +6,34 @@
 
 }
 
+.modal-header{
+  border-bottom:1px solid #ADB5BD;
+  text-align: center !important;
+  background-color: #A4C3B2;
+}
+
+.modal-footer{
+  border-top:1px solid #ADB5BD;
+}
+
+.modal-title{
+  font-family: "Lato";
+  font-weight: 400;
+  color: #495057;
+  text-align: center !important;
+}
+
 .ModalContent{
-  background-color: #edf2f4;
+  background-color: #A4C3B2;
+  color: #343A40;
+}
+
+.ModalBody{
+  background-color: #CCE3DE;
+}
+
+.ModalContent.modal-header{
+  text-align: center !important;
 }
 
 .recipeImg {
@@ -50,4 +76,14 @@
 
 .ingredientsContent{
   margin-right: 10px;
+}
+
+.btnClose{
+  background-color: #A4C3B2;
+  border-color: #ADB5BD !important;
+  color: #343A40;
+}
+
+.btnClose:hover{
+  background-color: #6B9080;
 }
