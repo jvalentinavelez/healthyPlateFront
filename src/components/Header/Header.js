@@ -1,21 +1,26 @@
 import "./Header.css";
-import { Navbar } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
-import { Form } from 'react-bootstrap';
-import { FormControl } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+
+import MydModalWithGrid from '../ModalRecipe/ModalRecipe.js'
+
+import {useState } from "react";
+
 import profile from './../../user.svg';
-import logo from './../../fish.svg';
+import logo from '../../img/salad.svg';
+
 
 function Header(){
+  const [showModal, setShow] = useState(false);
+
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <Container>
         <Navbar className="main-nav" collapseOnSelect expand="lg">
           <Container>
-            <Navbar.Brand href="#home">
-            <img alt="" src={logo} width="50" height="50"className="d-inline-block"/>{' '}HealthyPlate
+            <Navbar.Brand className="NavbarTitle" href="/">
+            <img alt="" src={logo} width="50" height="50"className="d-inline-block"/><span className="NavbarTitle">  HealthyPlate</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -32,13 +37,14 @@ function Header(){
                 </NavDropdown>
               </Nav>
               <Nav className="mx-auto">
-                <Nav.Link href="#general">General</Nav.Link>
+                <Nav.Link href="#general"  onClick={handleShow}>General</Nav.Link>
               </Nav>
+              <MydModalWithGrid show={showModal} onHide={handleClose} />
               <Nav className="me-auto">
-                <Nav.Link href="#miEspacio">Mi espacio</Nav.Link>
+                <Nav.Link href="MiEspacio">Mi espacio</Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link href="#home">
+                <Nav.Link href="MiPerfil">
                 <img alt="" src={profile} width="35"height="35"/>
                 </Nav.Link>
               </Nav>

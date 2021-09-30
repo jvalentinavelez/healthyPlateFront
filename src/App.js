@@ -1,17 +1,25 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./components/Header/Header.js";
-import Receta from "./components/Receta/Receta.js";
-import Recetas from "./components/Recetas/Recetas.js"
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import Layout from "./Layout";
+import MiEspacio from "./components/MiEspacio/MiEspacio.js";
 
 function App() {
   return (
-    <> 
-      <Header></Header>
-      <Receta></Receta>
-      <Recetas></Recetas>
-      
-    </>
+    <Router>
+      <Switch>
+        <Layout exact path="/">
+        </Layout>
+        <Layout path="/MiEspacio">
+          <MiEspacio />
+        </Layout>
+        <Layout path="/RecetasGuardadas">
+        </Layout>
+        <Layout path="/AlimentacionDia">
+        </Layout>
+        <Layout path="/MiPerfil">
+        </Layout>
+      </Switch>
+    </Router>
   )
 }
 
