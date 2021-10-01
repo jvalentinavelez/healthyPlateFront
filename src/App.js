@@ -2,12 +2,14 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import Layout from "./Layout";
 import MiEspacio from "./components/MiEspacio/MiEspacio.js";
+import Recetas from "./components/Recetas/Recetas.js";
 
 function App() {
   return (
     <Router>
       <Switch>
         <Layout exact path="/">
+          <Recetas></Recetas>
         </Layout>
         <Layout path="/MiEspacio">
           <MiEspacio />

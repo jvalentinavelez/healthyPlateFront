@@ -15,10 +15,10 @@ function Receta(){
 
 
     return(
-    <Card style={{width:'18rem'}} className="Card mb-2">
+    <Card style={{width:'12rem'}} className="Card sm-2">
         <Card.Img className="CardImage"variant="top" src="/img/teriyaki.jpg" />
         <Card.Body className="CardBody">
-            <Card.Subtitle>Pollo Teriyaki</Card.Subtitle> 
+            <Card.Subtitle className="CardSubtitle mb-2 text-muted">Pollo Teriyaki</Card.Subtitle> 
         </Card.Body>
     </Card>
     );
