@@ -23,6 +23,7 @@ function Carrousel({timeToEat}){
                                 <Receta
                                     name={receta.name}
                                     image={receta.image}
+                                    id={receta.id}
                                 />
                             ); 
                         }
