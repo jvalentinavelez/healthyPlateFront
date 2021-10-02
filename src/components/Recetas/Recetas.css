@@ -1,18 +1,5 @@
-body {
-    margin: 0px;
-}
-.carousel{
-    width: 100%;
-    overflow: scroll;
-    padding: 0px;
-    position: relative;
-
-}
-.carousel::-webkit-scrollbar{
-    display: none;
-}
-.carousel__container{
-    white-space: nowrap;
-    margin: 15px 0px;
-    padding-bottom: 5%;
+.subtitle{
+    font-size: 15px;
+    border-bottom: solid #BDBDBD 3px;
+    color: #666;
 }

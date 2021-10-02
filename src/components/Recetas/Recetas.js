@@ -1,36 +1,34 @@
 import "./Recetas.css";
-import { useState, useEffect } from "react";
-import Receta from "../Receta/Receta.js";
+import Carrousel from "../Carrousel/Carrousel.js";
 
 function Recetas(){
-
-    const [Recetas, setRecetas] = useState([]);
-
-    useEffect(()=>{
-        fetch("./json/Recetas.json")
-        .then((response)=>response.json())
-        .then((data)=>setRecetas(data));
-    },[]);
-
     
     return(
         <>
-            <section className="carousel">
-                <div className="carousel__container">
-                    {Recetas.map((receta)=>{
-                        if (receta.dayTime==='Almuerzo') {
-                            return(
-                                <Receta
-                                    name={receta.name}
-                                    image={receta.image}
-                                />
-                            ); 
-                        }
-                    })}
-                </div>
-            </section>
-            
-
+        <div>
+            <div className="subtitle">
+                <h4>Desayuno</h4>
+            </div>
+            <Carrousel
+                timeToEat='Desayuno'
+            />
+        </div>
+        <div>
+            <div className="subtitle">
+                <h4>Almuerzo</h4>
+            </div>
+            <Carrousel
+                timeToEat='Almuerzo'
+            />
+        </div>
+        <div>
+            <div className="subtitle">
+                <h4>Cena</h4>
+            </div>
+            <Carrousel
+                timeToEat='Cena'
+            />
+        </div>
         </>
     );
 }

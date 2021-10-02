@@ -1,11 +1,12 @@
 .Card{
     background-color: #edf2f4;
-    height:10rem;
+    height:8rem;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
     display: inline-block;
     margin-right: 10px;
+    margin-top: 0px;
     cursor: pointer;
     transition: 450ms all;
     -webkit-transform-origin: center;

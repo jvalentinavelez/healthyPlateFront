@@ -28,7 +28,7 @@
         "difficulty":"Media",
         "makingTime":40,
         "image":"./img/carne_asada.jpg",
-        "dayTime":"Almuerzo",
+        "dayTime":"Desayuno",
         "diet":"Normal",
         "ingredients": [
             "Pollo",
