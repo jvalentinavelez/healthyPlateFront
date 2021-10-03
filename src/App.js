@@ -5,6 +5,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import Layout from "./Layout";
 import MiEspacio from "./components/MiEspacio/MiEspacio.js";
+import MiPerfil from "./components/MiPerfil/MiPerfil.js";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Layout path="/AlimentacionDia">
         </Layout>
         <Layout path="/MiPerfil">
+          <MiPerfil />
         </Layout>
       </Switch>
     </Router>
