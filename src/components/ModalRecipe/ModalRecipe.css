@@ -79,13 +79,13 @@
 }
 
 /* Botón Cerrar */
-.btnClose{
+.btnModalClose{
   background-color: #A4C3B2;
   border-color: #ADB5BD !important;
   color: #343A40;
 }
 
-.btnClose:hover{
+.btnModalClose:hover{
   background-color: #6B9080;
 }
 

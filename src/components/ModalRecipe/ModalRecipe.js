@@ -123,7 +123,7 @@ function MydModalWithGrid(props) {
         </Container>
       </Modal.Body>
       <Modal.Footer className="ModalBody">
-        <Button onClick={props.onHide} className="btnClose">Cerrar</Button>
+        <Button onClick={props.onHide} className="btnModalClose">Cerrar</Button>
 
       </Modal.Footer>
     </Modal>

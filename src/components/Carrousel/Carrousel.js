@@ -12,26 +12,26 @@ function Carrousel({timeToEat}){
         .then((data)=>setRecetas(data));
     },[]);
 
-    
+
     return(
         <>
             <section className="carousel">
                 <div className="carousel__container">
                     {Recetas.map((receta)=>{
-                        if (receta.dayTime==timeToEat) {
+                        if (receta.dayTime===timeToEat) {
                             return(
                                 <Receta
                                     name={receta.name}
                                     image={receta.image}
                                     id={receta.id}
                                 />
-                            ); 
+                            );
                         }
                         return(null);
                     })}
                 </div>
             </section>
-            
+
 
         </>
     );
