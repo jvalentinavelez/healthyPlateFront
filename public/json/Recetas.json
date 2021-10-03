@@ -1,0 +1,112 @@
+[
+    {
+        "id":1,
+        "name":"Pollo Teriyaki",
+        "preparation": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "difficulty":"Media",
+        "makingTime":40,
+        "image":"./img/teriyaki.jpg",
+        "dayTime":"Almuerzo",
+        "diet":"Normal",
+        "ingredients": [
+            "Pollo",
+            "Cebolla larga",
+            "Pimenton",
+            "Salsa de soya",
+            "Pimienta negra",
+            "Miel"
+        ],
+        "calories":120,
+        "carbohidrates":50,
+        "fats":20,
+        "target":"Ganar peso"
+    },
+    {
+        "id":2,
+        "name":"Carne Asada",
+        "preparation": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "difficulty":"Media",
+        "makingTime":40,
+        "image":"./img/carne_asada.jpg",
+        "dayTime":"Desayuno",
+        "diet":"Normal",
+        "ingredients": [
+            "Pollo",
+            "Cebolla larga",
+            "Pimenton",
+            "Salsa de soya",
+            "Pimienta negra",
+            "Miel"
+        ],
+        "calories":120,
+        "carbohidrates":50,
+        "fats":20,
+        "target":"Ganar peso"
+    },
+    {
+        "id":3,
+        "name":"Crema de Tomate",
+        "preparation": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "difficulty":"Media",
+        "makingTime":40,
+        "image":"./img/crema_tomate.jpg",
+        "dayTime":"Almuerzo",
+        "diet":"Normal",
+        "ingredients": [
+            "Pollo",
+            "Cebolla larga",
+            "Pimenton",
+            "Salsa de soya",
+            "Pimienta negra",
+            "Miel"
+        ],
+        "calories":120,
+        "carbohidrates":50,
+        "fats":20,
+        "target":"Ganar peso"
+    },
+    {
+        "id":4,
+        "name":"Ensalada Cesar",
+        "preparation": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "difficulty":"Media",
+        "makingTime":40,
+        "image":"./img/ensalada_cesar.jpg",
+        "dayTime":"Almuerzo",
+        "diet":"Normal",
+        "ingredients": [
+            "Pollo",
+            "Cebolla larga",
+            "Pimenton",
+            "Salsa de soya",
+            "Pimienta negra",
+            "Miel"
+        ],
+        "calories":120,
+        "carbohidrates":50,
+        "fats":20,
+        "target":"Perder peso"
+    },
+    {
+        "id":4,
+        "name":"File Mignon",
+        "preparation": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "difficulty":"Media",
+        "makingTime":40,
+        "image":"./img/file_mignon.jpg",
+        "dayTime":"Cena",
+        "diet":"Normal",
+        "ingredients": [
+            "Pollo",
+            "Cebolla larga",
+            "Pimenton",
+            "Salsa de soya",
+            "Pimienta negra",
+            "Miel"
+        ],
+        "calories":120,
+        "carbohidrates":50,
+        "fats":20,
+        "target":"Ganar peso"
+    }
+]
