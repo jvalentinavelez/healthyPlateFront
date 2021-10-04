@@ -1,19 +1,15 @@
 import "./MiPerfil.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// import healthyFood from '../../../public/img/healthy-food.svg';
-// import smoothie from '../../../public/img/smoothie.svg';
-// import noMeat from '../../../public/img/no-meat.svg';
-
-// import nuts from '../../../public/img/nuts.svg';
-// import diet from '../../../public/img/diet.svg';
-
-
-
-
 import {Container, Row, Col, Card, Form, Button, FloatingLabel, Dropdown} from 'react-bootstrap';
 
+import React, {useState } from "react";
+
 function MiPerfil() {
+  const [value,setValue]=useState('');
+  const handleSelect=(e)=>{
+    console.log(e);
+    setValue(e)
+  }
   return (
     <Container>
       <Row>
@@ -35,13 +31,31 @@ function MiPerfil() {
 
               <Row className="g-2">
                 <Col md>
-                  <FloatingLabel controlId="floatingInputGrid" label="Género">
+                <Dropdown onSelect={handleSelect}>
+                  <Dropdown.Toggle className="DropdownMiPerfil" id="dropdown-basic">
+                    Género  <span> <img src={parents} width="43px" height="43px" alt="no" /> </span>
+                  </Dropdown.Toggle>
+                                    <Dropdown.Menu>
+                    <Dropdown.Item eventKey="mujer">Mujer</Dropdown.Item>
+                    <Dropdown.Item eventKey="hombre">Hombre</Dropdown.Item>
+                                      </Dropdown.Menu>
+                    </Dropdown>
+                </Col>
+                <Col md>
+                  <FloatingLabel  controlId="floatingInputGrid" label="Fecha de Nacimiento">
+                    <Form.Control type="date"/>
+                  </FloatingLabel>
+                </Col>
+              </Row>
 
+              <Row className="g-2">
+                <Col md>
+                  <FloatingLabel controlId="floatingInputGrid" label="Estatura (cm)">
                     <Form.Control />
                   </FloatingLabel>
                 </Col>
                 <Col md>
-                  <FloatingLabel controlId="floatingInputGrid" label="Fecha de Nacimiento">
+                  <FloatingLabel controlId="floatingInputGrid" label="Peso (kg)">
                     <Form.Control />
                   </FloatingLabel>
                 </Col>
@@ -49,20 +63,7 @@ function MiPerfil() {
 
               <Row className="g-2">
                 <Col md>
-                  <FloatingLabel controlId="floatingInputGrid" label="Estatura">
-                    <Form.Control />
-                  </FloatingLabel>
-                </Col>
-                <Col md>
-                  <FloatingLabel controlId="floatingInputGrid" label="Peso">
-                    <Form.Control />
-                  </FloatingLabel>
-                </Col>
-              </Row>
-
-              <Row className="g-2">
-                <Col md>
-                <Dropdown>
+                <Dropdown onSelect={handleSelect}>
                   <Dropdown.Toggle className="DropdownMiPerfil" id="dropdown-basic">
                     Dieta
                   </Dropdown.Toggle>
@@ -77,7 +78,7 @@ function MiPerfil() {
 
               <Row className="g-2">
                 <Col md>
-                <Dropdown >
+                <Dropdown onSelect={handleSelect} >
                   <Dropdown.Toggle className="DropdownMiPerfil" id="dropdown-basic">
                     Objetivo
                   </Dropdown.Toggle>
