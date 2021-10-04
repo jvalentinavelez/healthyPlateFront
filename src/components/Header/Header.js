@@ -5,8 +5,8 @@ import MydModalWithGrid from '../ModalRecipe/ModalRecipe.js'
 
 import {useState } from "react";
 
-import profile from './../../user.svg';
-import logo from '../../img/salad.svg';
+// import profile from './img/user.svg';
+// import logo from '../../../public/img/salad.svg';
 
 
 function Header(){
@@ -20,7 +20,7 @@ function Header(){
         <Navbar className="main-nav" collapseOnSelect expand="lg">
           <Container>
             <Navbar.Brand className="NavbarTitle" href="/">
-            <img alt="" src={logo} width="50" height="50"className="d-inline-block"/><span className="NavbarTitle">  HealthyPlate</span>
+            <img alt="" src='./img/salad.svg' width="50" height="50"className="d-inline-block"/><span className="NavbarTitle">  HealthyPlate</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -37,7 +37,7 @@ function Header(){
                 </NavDropdown>
               </Nav>
               <Nav className="mx-auto">
-                <Nav.Link href="#general"  onClick={handleShow}>General</Nav.Link>
+                <Nav.Link href="/">General</Nav.Link>
               </Nav>
               <MydModalWithGrid show={showModal} onHide={handleClose} />
               <Nav className="me-auto">
@@ -45,7 +45,7 @@ function Header(){
               </Nav>
               <Nav>
                 <Nav.Link href="MiPerfil">
-                <img alt="" src={profile} width="35"height="35"/>
+                <img alt="" src='./img/user.svg' width="35"height="35"/>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

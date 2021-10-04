@@ -2,12 +2,11 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import Layout from "./Layout";
 import MiEspacio from "./components/MiEspacio/MiEspacio.js";
-// <<<<<<< HEAD
 import MiPerfil from "./components/MiPerfil/MiPerfil.js";
-
-// =======
 import Recetas from "./components/Recetas/Recetas.js"
-// >>>>>>> bed6159a384df8a3e224d506298dea09ecc49f55
+import RecetasGuardadas from './components/recetasGuardadas/recetasGuardadas';
+import AlimentacionDia from './components/alimentacionDia/alimentacionDia';
+
 
 function App() {
   return (
@@ -20,8 +19,10 @@ function App() {
           <MiEspacio />
         </Layout>
         <Layout path="/RecetasGuardadas">
+          <RecetasGuardadas/>
         </Layout>
         <Layout path="/AlimentacionDia">
+          <AlimentacionDia/>
         </Layout>
         <Layout path="/MiPerfil">
           <MiPerfil />

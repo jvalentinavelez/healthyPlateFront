@@ -1,21 +1,32 @@
 import "./ModalRecipe.css";
 
 import { Modal, Row, Col, Container, Button, Image } from 'react-bootstrap';
-import React, {useState } from "react";
+import React, {useState, useEffect } from "react";
 
-import bowl from '../../img/bowl.jpg';
+// import bowl from '../../../public/img/bowl.jpg';
 
 function MydModalWithGrid(props) {
 
   const [ heartActive, setHeartState ] = useState(false);
+  
+  const [Receta, setReceta] = useState([]);
 
 
+    // console.log(props.id);
+    useEffect(()=>{
+        fetch(`./json/id/${props.id}.json`)
+        .then((response)=>response.json())
+        .then((data)=>setReceta(data));
+    },[]);
+    /* if (props.ingredients) {
+       console.log(Receta);+
+    } */
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" className="Modal" size="lg"
       centered>
       <Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter" className="Title">
-          Bowl de Frutas y Granola
+          {Receta.name}
         </Modal.Title>
       <i className={ `bi bi-heart ${heartActive ? 'bi bi-heart-fill':"" }`} onClick={() => setHeartState(!heartActive)} id="heart"></i>
 
@@ -24,13 +35,13 @@ function MydModalWithGrid(props) {
         <Container>
           <Row>
             <Col xs={12} md={12} lg={7} className="m-auto">
-                <Image className="recipeImg d-block img-fluid" src={bowl} rounded />
+                <Image className="recipeImg d-block img-fluid" src={Receta.image} rounded />
             </Col>
             <Col xs={12} md={12} lg={5}>
               <Row> <div className="ingredientsTitle"><span className="boldTitles">Ingredientes</span></div>
               </Row>
               <Row>
-                <Container>
+                <Container> 
                   <Row className="ingredientsContent">
                     <Col>
                       <div className="text-center">Banano</div>
@@ -59,13 +70,7 @@ function MydModalWithGrid(props) {
               </Row>
               <Row className="preparacionRow">
               <div className="preparacionDiv">
-              <span className="boldTitles">Preperación: </span> Servir yogurt en un bowl y cubrir con banano, mora, fresa, granola, coco rayado y semillas de chía.
-              Aenean eleifend mattis nunc, in ultricies dolor egestas sit amet. Aliquam aliquet urna eget ante bibendum, quis facilisis elit tempus.
-              Mauris facilisis lectus venenatis, hendrerit orci imperdiet, sodales dui. Nulla tristique lobortis diam, vitae ullamcorper magna dignissim vitae.
-              Maecenas vulputate scelerisque dui sit amet facilisis. Vivamus gravida euismod tortor vitae varius. Nulla vitae massa quis magna iaculis bibendum gravida a nunc.
-              Phasellus sodales, neque in laoreet lacinia, dui arcu iaculis risus, placerat condimentum sapien ligula sed metus. Pellentesque tempor convallis porta. Vivamus at metus sed lectus viverra euismod.
-              Morbi dignissim lacus ac aliquet vehicula. Etiam tincidunt eros elit, sit amet aliquam leo feugiat et. Etiam mi odio, interdum nec lorem vitae, egestas ultrices urna. Quisque sit amet nunc nunc.
-              Morbi placerat turpis euismod rutrum posuere.</div>
+              <span className="boldTitles">Preperación: </span> {Receta.preparation}</div>
               </Row>
             </Col>
           </Row>
@@ -76,7 +81,7 @@ function MydModalWithGrid(props) {
                 <Row>
                     <Col>
                       <Row>
-                        <div className="text-center">401 kCal</div>
+                        <div className="text-center">{Receta.calories}</div>
                       </Row>
                       <Row>
                         <div className="text-center boldTitles">Calorías</div>
@@ -84,7 +89,7 @@ function MydModalWithGrid(props) {
                     </Col>
                     <Col>
                       <Row>
-                          <div className="text-center">24g</div>
+                          <div className="text-center">{Receta.proteins}</div>
                       </Row>
                       <Row>
                           <div className="text-center boldTitles">Proteínas</div>
@@ -92,7 +97,7 @@ function MydModalWithGrid(props) {
                     </Col>
                     <Col>
                     <Row>
-                        <div className="text-center">43g</div>
+                        <div className="text-center">{Receta.carbohidrates}</div>
                     </Row>
                     <Row>
                         <div className="text-center boldTitles">Carbs</div>
@@ -100,7 +105,7 @@ function MydModalWithGrid(props) {
                     </Col>
                     <Col>
                     <Row>
-                        <div className="text-center">18g</div>
+                        <div className="text-center">{Receta.fats}g</div>
                     </Row>
                     <Row>
                         <div className="text-center boldTitles">Grasas</div>
@@ -112,10 +117,10 @@ function MydModalWithGrid(props) {
             <Col xs={12} md={5} className="categoria">
               <Container className="text-center">
                 <Row>
-                  <div className="text-center"><span className="boldTitles">Dificultad: </span>Fácil</div>
+                  <div className="text-center"><span className="boldTitles">Dificultad: </span>{Receta.difficulty}</div>
                 </Row>
                 <Row>
-                  <div className="text-center"><span className="boldTitles">Tiempo: </span>10min</div>
+                  <div className="text-center"><span className="boldTitles">Tiempo: </span>{Receta.makingTime}</div>
                 </Row>
               </Container>
             </Col>

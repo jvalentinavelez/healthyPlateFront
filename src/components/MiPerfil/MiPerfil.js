@@ -1,12 +1,12 @@
 import "./MiPerfil.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import healthyFood from '../../img/healthy-food.svg';
-import smoothie from '../../img/smoothie.svg';
-import noMeat from '../../img/no-meat.svg';
+// import healthyFood from '../../../public/img/healthy-food.svg';
+// import smoothie from '../../../public/img/smoothie.svg';
+// import noMeat from '../../../public/img/no-meat.svg';
 
-import nuts from '../../img/nuts.svg';
-import diet from '../../img/diet.svg';
+// import nuts from '../../../public/img/nuts.svg';
+// import diet from '../../../public/img/diet.svg';
 
 
 
@@ -67,9 +67,9 @@ function MiPerfil() {
                     Dieta
                   </Dropdown.Toggle>
                                     <Dropdown.Menu>
-                    <Dropdown.Item>General <span> <img src={healthyFood} width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
-                    <Dropdown.Item>Saludable <span> <img src={smoothie} width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
-                    <Dropdown.Item>Vegetariana <span> <img src={noMeat} width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
+                    <Dropdown.Item>General <span> <img src="./img/healthy-food.svg" width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
+                    <Dropdown.Item>Saludable <span> <img src='./img/smoothie.svg' width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
+                    <Dropdown.Item>Vegetariana <span> <img src='./img/no-meat.svg' width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
                                       </Dropdown.Menu>
                     </Dropdown>
                 </Col>
@@ -82,8 +82,8 @@ function MiPerfil() {
                     Objetivo
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item >Bajar de peso <span> <img src={diet} width="40px" height="40px" alt="no" /> </span> </Dropdown.Item>
-                    <Dropdown.Item >Ganar masa muscular <span> <img src={nuts} width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
+                    <Dropdown.Item >Bajar de peso <span> <img src='./img/diet.svg' width="40px" height="40px" alt="no" /> </span> </Dropdown.Item>
+                    <Dropdown.Item >Ganar masa muscular <span> <img src='./img/nuts.svg 'width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
                   </Dropdown.Menu>
               </Dropdown>
                 </Col>
@@ -93,8 +93,6 @@ function MiPerfil() {
                   Modificar
                 </Button>
               </Row>
-
-
               </Form>
               </Card.Text>
             </Card.Body>

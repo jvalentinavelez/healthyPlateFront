@@ -58,9 +58,13 @@
   margin: 20px 2px 20px 0px;
 }
 
+.preparacionRow::-webkit-scrollbar{
+  display: none;
+}
 .preparacionDiv{
   text-align: justify;
 }
+
 
 /* Sección Contenido Nutricional */
 .contNutricional{
