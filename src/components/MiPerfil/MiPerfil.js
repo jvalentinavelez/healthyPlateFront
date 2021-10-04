@@ -33,7 +33,7 @@ function MiPerfil() {
                 <Col md>
                 <Dropdown onSelect={handleSelect}>
                   <Dropdown.Toggle className="DropdownMiPerfil" id="dropdown-basic">
-                    Género  <span> <img src={parents} width="43px" height="43px" alt="no" /> </span>
+                    Género  <span> <img src="./img/icons/parents.svg" width="43px" height="43px" alt="no" /> </span>
                   </Dropdown.Toggle>
                                     <Dropdown.Menu>
                     <Dropdown.Item eventKey="mujer">Mujer</Dropdown.Item>
@@ -68,9 +68,9 @@ function MiPerfil() {
                     Dieta
                   </Dropdown.Toggle>
                                     <Dropdown.Menu>
-                    <Dropdown.Item>General <span> <img src="./img/healthy-food.svg" width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
-                    <Dropdown.Item>Saludable <span> <img src='./img/smoothie.svg' width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
-                    <Dropdown.Item>Vegetariana <span> <img src='./img/no-meat.svg' width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
+                    <Dropdown.Item>General <span> <img src="./img/icons/healthy-food.svg" width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
+                    <Dropdown.Item>Saludable <span> <img src='./img/icons/smoothie.svg' width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
+                    <Dropdown.Item>Vegetariana <span> <img src='./img/icons/no-meat.svg' width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
                                       </Dropdown.Menu>
                     </Dropdown>
                 </Col>
@@ -83,8 +83,8 @@ function MiPerfil() {
                     Objetivo
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item >Bajar de peso <span> <img src='./img/diet.svg' width="40px" height="40px" alt="no" /> </span> </Dropdown.Item>
-                    <Dropdown.Item >Ganar masa muscular <span> <img src='./img/nuts.svg 'width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
+                    <Dropdown.Item >Bajar de peso <span> <img src='./img/icons/diet.svg' width="40px" height="40px" alt="no" /> </span> </Dropdown.Item>
+                    <Dropdown.Item >Ganar masa muscular <span> <img src='./img/icons/nuts.svg 'width="40px" height="40px" alt="no" /> </span></Dropdown.Item>
                   </Dropdown.Menu>
               </Dropdown>
                 </Col>
